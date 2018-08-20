@@ -1,0 +1,64 @@
+2018-07-25 04:06:05.652 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-07-25 04:06:06.222 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.3.1
+2018-07-25 04:06:06.222 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-07-25 04:06:06.222 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/sidath/Desktop/solr-7.3.1
+2018-07-25 04:06:06.252 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-07-25T04:06:06.225Z
+2018-07-25 04:06:06.254 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-07-25 04:06:06.302 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/sidath/Desktop/solr-7.3.1/server/solr
+2018-07-25 04:06:06.316 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/sidath/Desktop/solr-7.3.1/server/solr/solr.xml
+2018-07-25 04:06:07.386 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/sidath/Desktop/solr-7.3.1/server/solr
+2018-07-25 04:06:07.387 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [news]
+2018-07-25 04:06:07.399 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-07-25 04:06:07.511 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrResourceLoader [news] Added 57 libs to classloader, from paths: [/home/sidath/Desktop/solr-7.3.1/contrib/clustering/lib, /home/sidath/Desktop/solr-7.3.1/contrib/extraction/lib, /home/sidath/Desktop/solr-7.3.1/contrib/langid/lib, /home/sidath/Desktop/solr-7.3.1/contrib/velocity/lib, /home/sidath/Desktop/solr-7.3.1/dist]
+2018-07-25 04:06:07.521 INFO  (main) [   ] o.e.j.s.Server Started @2861ms
+2018-07-25 04:06:07.856 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.3.1
+2018-07-25 04:06:08.213 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.IndexSchema [news] Schema name=default-config
+2018-07-25 04:06:09.310 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-07-25 04:06:09.445 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.CoreContainer Creating SolrCore 'news' using configuration from instancedir /home/sidath/Desktop/solr-7.3.1/server/solr/news, trusted=true
+2018-07-25 04:06:09.540 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-07-25 04:06:09.549 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrCore [[news] ] Opening new SolrCore at [/home/sidath/Desktop/solr-7.3.1/server/solr/news], dataDir=[/home/sidath/Desktop/solr-7.3.1/server/solr/news/data/]
+2018-07-25 04:06:09.602 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-07-25 04:06:10.377 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-07-25 04:06:10.377 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-07-25 04:06:10.424 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-07-25 04:06:10.425 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-07-25 04:06:10.586 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.SolrIndexSearcher Opening [Searcher@2f68d8d2[news] main]
+2018-07-25 04:06:10.615 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/sidath/Desktop/solr-7.3.1/server/solr/news/conf
+2018-07-25 04:06:10.662 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-07-25 04:06:10.678 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,minPrefix=1,minQueryLength=3}
+2018-07-25 04:06:10.708 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-07-25 04:06:10.959 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2f68d8d2[news] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-07-25 04:06:10.962 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-07-25 04:06:10.962 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-07-25 04:06:11.007 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.SolrCore [news] Registered new searcher Searcher@2f68d8d2[news] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-07-25 04:06:15.768 INFO  (qtp1908316405-12) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:score&_=1532491346848} hits=0 status=0 QTime=117
+2018-07-25 04:06:16.198 INFO  (qtp1908316405-21) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:score&_=1532491346848} hits=0 status=0 QTime=1
+2018-07-25 04:06:21.543 INFO  (qtp1908316405-21) [   x:news] o.a.s.u.p.LogUpdateProcessorFactory [news]  webapp=/solr path=/update/json/docs params={}{add=[e50f36a2-8c9b-41a7-b669-51e8f975f8eb (1606933891819503616), 54095a6f-9293-4c11-9004-8329dbff119b (1606933891911778304), 96bdfb5d-f79c-475c-8fd0-d0ed3f8ec9ba (1606933891915972608), 861c04ee-30fe-4422-9511-7171583c146c (1606933891919118336), c05cae6f-cc8b-4c64-92b5-51fcc6d1a057 (1606933891922264064), 161159a2-fc97-48ba-a048-af1d2e4768f8 (1606933891926458368), e36bb741-3eb4-4862-bc43-673a55400f7f (1606933891930652672), c51215c5-b490-44cf-8da2-0b1ddd2257ba (1606933891934846976), 1a486942-894b-4866-84dc-6a0a5ebff7e1 (1606933891939041280), f71463e7-1a6b-4176-bbe9-ddd1adf027fa (1606933891942187008), ... (562 adds)]} 0 837
+2018-07-25 04:06:21.552 INFO  (qtp1908316405-17) [   x:news] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1606933892617469952,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-07-25 04:06:21.553 INFO  (qtp1908316405-17) [   x:news] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@c270ee3 commitCommandVersion:1606933892617469952
+2018-07-25 04:06:22.528 INFO  (qtp1908316405-17) [   x:news] o.a.s.s.SolrIndexSearcher Opening [Searcher@13cec1d2[news] main]
+2018-07-25 04:06:22.532 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@13cec1d2[news] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_w(7.3.1):C562)))}
+2018-07-25 04:06:22.532 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-07-25 04:06:22.533 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.SolrCore [news] Registered new searcher Searcher@13cec1d2[news] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_w(7.3.1):C562)))}
+2018-07-25 04:06:22.535 INFO  (qtp1908316405-17) [   x:news] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-07-25 04:06:22.536 INFO  (qtp1908316405-17) [   x:news] o.a.s.u.p.LogUpdateProcessorFactory [news]  webapp=/solr path=/update params={commit=true}{commit=} 0 984
+2018-07-25 04:08:31.904 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:score&_=1532491346848} hits=73 status=0 QTime=21
+2018-07-25 04:08:50.275 INFO  (qtp1908316405-20) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=score&_=1532491346848} hits=1 status=0 QTime=3
+2018-07-25 04:08:57.078 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:score&_=1532491346848} hits=73 status=0 QTime=1
+2018-07-25 04:09:08.263 INFO  (qtp1908316405-20) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:four&_=1532491346848} hits=84 status=0 QTime=2
+2018-07-25 04:10:17.995 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=for&_=1532491346848} hits=75 status=0 QTime=1
+2018-07-25 04:10:31.415 INFO  (qtp1908316405-17) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=four&_=1532491346848} hits=3 status=0 QTime=1
+2018-07-25 04:10:55.264 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:four&_=1532491346848} hits=84 status=0 QTime=1
+2018-07-25 04:15:12.043 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:four&_=1532491346848} hits=84 status=0 QTime=0
+2018-07-25 04:15:22.838 INFO  (qtp1908316405-21) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=four&_=1532491346848} hits=3 status=0 QTime=1
+2018-07-25 04:15:32.142 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:four&_=1532491346848} hits=84 status=0 QTime=0
+2018-07-25 04:15:41.234 INFO  (qtp1908316405-21) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=four&_=1532491346848} hits=3 status=0 QTime=0
+2018-07-25 04:15:49.105 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=for&_=1532491346848} hits=75 status=0 QTime=1
+2018-07-25 04:15:56.118 INFO  (qtp1908316405-21) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=four&_=1532491346848} hits=3 status=0 QTime=1
+2018-07-25 04:16:04.602 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:four&_=1532491346848} hits=84 status=0 QTime=1
+2018-07-25 04:17:55.649 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=294247762
+2018-07-25 04:17:55.650 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-07-25 04:17:55.650 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-07-25 04:17:55.650 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-07-25 04:17:55.651 INFO  (coreCloseExecutor-12-thread-1) [   x:news] o.a.s.c.SolrCore [news]  CLOSING SolrCore org.apache.solr.core.SolrCore@2b4556c2
+2018-07-25 04:17:55.651 INFO  (coreCloseExecutor-12-thread-1) [   x:news] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.news, tag=725964482

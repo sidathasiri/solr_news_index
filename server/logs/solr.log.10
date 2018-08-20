@@ -1,0 +1,50 @@
+2018-07-22 07:43:20.983 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-07-22 07:43:21.880 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.3.1
+2018-07-22 07:43:21.881 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-07-22 07:43:21.882 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/sidath/Desktop/solr-7.3.1
+2018-07-22 07:43:21.921 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-07-22T07:43:21.886Z
+2018-07-22 07:43:21.924 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-07-22 07:43:21.958 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/sidath/Desktop/solr-7.3.1/server/solr
+2018-07-22 07:43:21.969 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/sidath/Desktop/solr-7.3.1/server/solr/solr.xml
+2018-07-22 07:43:23.471 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/sidath/Desktop/solr-7.3.1/server/solr
+2018-07-22 07:43:23.472 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [news]
+2018-07-22 07:43:23.483 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-07-22 07:43:23.614 INFO  (main) [   ] o.e.j.s.Server Started @3577ms
+2018-07-22 07:43:23.621 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrResourceLoader [news] Added 57 libs to classloader, from paths: [/home/sidath/Desktop/solr-7.3.1/contrib/clustering/lib, /home/sidath/Desktop/solr-7.3.1/contrib/extraction/lib, /home/sidath/Desktop/solr-7.3.1/contrib/langid/lib, /home/sidath/Desktop/solr-7.3.1/contrib/velocity/lib, /home/sidath/Desktop/solr-7.3.1/dist]
+2018-07-22 07:43:24.062 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.3.1
+2018-07-22 07:43:24.550 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.IndexSchema [news] Schema name=default-config
+2018-07-22 07:43:25.861 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-07-22 07:43:25.999 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.CoreContainer Creating SolrCore 'news' using configuration from instancedir /home/sidath/Desktop/solr-7.3.1/server/solr/news, trusted=true
+2018-07-22 07:43:26.117 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-07-22 07:43:26.132 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrCore [[news] ] Opening new SolrCore at [/home/sidath/Desktop/solr-7.3.1/server/solr/news], dataDir=[/home/sidath/Desktop/solr-7.3.1/server/solr/news/data/]
+2018-07-22 07:43:26.219 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-07-22 07:43:27.046 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-07-22 07:43:27.048 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-07-22 07:43:27.109 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-07-22 07:43:27.109 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-07-22 07:43:27.636 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.SolrIndexSearcher Opening [Searcher@659208a9[news] main]
+2018-07-22 07:43:27.698 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/sidath/Desktop/solr-7.3.1/server/solr/news/conf
+2018-07-22 07:43:27.765 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-07-22 07:43:27.788 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,minPrefix=1,minQueryLength=3}
+2018-07-22 07:43:27.835 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-07-22 07:43:28.177 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@659208a9[news] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(7.3.1):C562)))}
+2018-07-22 07:43:28.197 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-07-22 07:43:28.198 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-07-22 07:43:28.228 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.SolrCore [news] Registered new searcher Searcher@659208a9[news] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(7.3.1):C562)))}
+2018-07-22 07:43:37.308 INFO  (qtp1908316405-13) [   x:news] o.a.s.s.SolrIndexSearcher Opening [Searcher@6f276c74[news] realtime]
+2018-07-22 07:43:37.314 INFO  (qtp1908316405-13) [   x:news] o.a.s.u.p.LogUpdateProcessorFactory [news]  webapp=/solr path=/update params={}{deleteByQuery=*:* (-1606675770588004352)} 0 255
+2018-07-22 07:43:37.339 INFO  (qtp1908316405-16) [   x:news] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1606675770731659264,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-07-22 07:43:37.340 INFO  (qtp1908316405-16) [   x:news] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@374f1371 commitCommandVersion:1606675770731659264
+2018-07-22 07:43:37.458 INFO  (qtp1908316405-16) [   x:news] o.a.s.s.SolrIndexSearcher Opening [Searcher@189a0e9c[news] main]
+2018-07-22 07:43:37.463 INFO  (qtp1908316405-16) [   x:news] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-07-22 07:43:37.464 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@189a0e9c[news] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-07-22 07:43:37.464 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-07-22 07:43:37.465 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.SolrCore [news] Registered new searcher Searcher@189a0e9c[news] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-07-22 07:43:37.469 INFO  (qtp1908316405-16) [   x:news] o.a.s.u.p.LogUpdateProcessorFactory [news]  webapp=/solr path=/update params={commit=true}{commit=} 0 130
+2018-07-22 07:44:00.981 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:develop*&_=1532241401363} hits=0 status=0 QTime=33
+2018-07-22 07:44:07.168 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=294247762
+2018-07-22 07:44:07.169 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-07-22 07:44:07.169 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-07-22 07:44:07.169 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-07-22 07:44:07.171 INFO  (coreCloseExecutor-12-thread-1) [   x:news] o.a.s.c.SolrCore [news]  CLOSING SolrCore org.apache.solr.core.SolrCore@59c40267
+2018-07-22 07:44:07.172 INFO  (coreCloseExecutor-12-thread-1) [   x:news] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.news, tag=1506017895

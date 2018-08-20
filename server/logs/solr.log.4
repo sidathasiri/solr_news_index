@@ -1,0 +1,151 @@
+2018-08-20 14:45:40.732 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.8.v20171121, build timestamp: 2017-11-21T21:27:37Z, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-08-20 14:45:41.707 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.3.1
+2018-08-20 14:45:41.708 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-08-20 14:45:41.708 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/sidath/Desktop/solr-7.3.1
+2018-08-20 14:45:41.759 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-08-20T14:45:41.711Z
+2018-08-20 14:45:41.761 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-08-20 14:45:41.941 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/sidath/Desktop/solr-7.3.1/server/solr
+2018-08-20 14:45:41.987 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/sidath/Desktop/solr-7.3.1/server/solr/solr.xml
+2018-08-20 14:45:44.739 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/sidath/Desktop/solr-7.3.1/server/solr
+2018-08-20 14:45:44.740 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [news]
+2018-08-20 14:45:44.749 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-08-20 14:45:45.079 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrResourceLoader [news] Added 57 libs to classloader, from paths: [/home/sidath/Desktop/solr-7.3.1/contrib/clustering/lib, /home/sidath/Desktop/solr-7.3.1/contrib/extraction/lib, /home/sidath/Desktop/solr-7.3.1/contrib/langid/lib, /home/sidath/Desktop/solr-7.3.1/contrib/velocity/lib, /home/sidath/Desktop/solr-7.3.1/dist]
+2018-08-20 14:45:45.102 INFO  (main) [   ] o.e.j.s.Server Started @6751ms
+2018-08-20 14:45:46.960 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.3.1
+2018-08-20 14:45:47.299 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.IndexSchema [news] Schema name=default-config
+2018-08-20 14:45:48.574 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-08-20 14:45:48.637 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.CoreContainer Creating SolrCore 'news' using configuration from instancedir /home/sidath/Desktop/solr-7.3.1/server/solr/news, trusted=true
+2018-08-20 14:45:48.750 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-08-20 14:45:48.767 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.c.SolrCore [[news] ] Opening new SolrCore at [/home/sidath/Desktop/solr-7.3.1/server/solr/news], dataDir=[/home/sidath/Desktop/solr-7.3.1/server/solr/news/data/]
+2018-08-20 14:45:48.895 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-08-20 14:45:49.601 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-08-20 14:45:49.601 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-08-20 14:45:49.681 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-08-20 14:45:49.681 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-08-20 14:45:50.050 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.SolrIndexSearcher Opening [Searcher@6db09392[news] main]
+2018-08-20 14:45:50.113 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/sidath/Desktop/solr-7.3.1/server/solr/news/conf
+2018-08-20 14:45:50.179 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-08-20 14:45:50.205 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,minPrefix=1,minQueryLength=3}
+2018-08-20 14:45:50.235 INFO  (coreLoadExecutor-6-thread-1) [   x:news] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-08-20 14:45:50.475 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6db09392[news] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_w(7.3.1):C562)))}
+2018-08-20 14:45:50.476 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-08-20 14:45:50.476 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-08-20 14:45:50.505 INFO  (searcherExecutor-7-thread-1-processing-x:news) [   x:news] o.a.s.c.SolrCore [news] Registered new searcher Searcher@6db09392[news] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_w(7.3.1):C562)))}
+2018-08-20 14:46:11.048 INFO  (qtp1908316405-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1534776370598} status=0 QTime=13
+2018-08-20 14:46:11.157 INFO  (qtp1908316405-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1534776370599} status=0 QTime=113
+2018-08-20 14:46:11.185 INFO  (qtp1908316405-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1534776370599} status=0 QTime=13
+2018-08-20 14:46:14.652 INFO  (qtp1908316405-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1534776370598} status=0 QTime=0
+2018-08-20 14:46:14.676 INFO  (qtp1908316405-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1534776370599} status=0 QTime=16
+2018-08-20 14:46:14.686 INFO  (qtp1908316405-13) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1534776374639} status=0 QTime=19
+2018-08-20 14:46:14.691 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/replication params={wt=json&command=details&_=1534776374640} status=0 QTime=23
+2018-08-20 14:46:14.698 INFO  (qtp1908316405-12) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1534776370599&ts=1534776370599} status=503 QTime=19
+2018-08-20 14:46:14.725 INFO  (qtp1908316405-19) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/admin/system params={wt=json&_=1534776374639} status=0 QTime=50
+2018-08-20 14:46:19.656 INFO  (qtp1908316405-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1534776370598} status=0 QTime=0
+2018-08-20 14:46:19.669 INFO  (qtp1908316405-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1534776370599} status=0 QTime=12
+2018-08-20 14:46:23.186 INFO  (qtp1908316405-12) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=*:*&_=1534776379597} hits=562 status=0 QTime=83
+2018-08-20 14:47:45.020 INFO  (qtp1908316405-13) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=*:*&facet.field=category&rows=0&facet=true} hits=562 status=0 QTime=90
+2018-08-20 14:48:50.487 INFO  (qtp1908316405-14) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=develop&_=1534776379597} hits=0 status=0 QTime=25
+2018-08-20 14:49:00.417 INFO  (qtp1908316405-34) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:develop&_=1534776379597} hits=4 status=0 QTime=8
+2018-08-20 14:49:26.325 INFO  (qtp1908316405-14) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=company&_=1534776379597} hits=1 status=0 QTime=1
+2018-08-20 14:49:34.860 INFO  (qtp1908316405-34) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=to&_=1534776379597} hits=178 status=0 QTime=3
+2018-08-20 14:49:43.229 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=develop&_=1534776379597} hits=0 status=0 QTime=0
+2018-08-20 14:49:50.394 INFO  (qtp1908316405-34) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:develop&_=1534776379597} hits=4 status=0 QTime=1
+2018-08-20 14:50:14.091 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:need&_=1534776379597} hits=3 status=0 QTime=7
+2018-08-20 14:50:30.355 INFO  (qtp1908316405-34) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 14:50:32.506 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=0
+2018-08-20 14:50:33.580 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 14:50:54.002 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=want&_=1534776379597} hits=0 status=0 QTime=1
+2018-08-20 14:51:01.020 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=need&_=1534776379597} hits=0 status=0 QTime=0
+2018-08-20 14:51:01.923 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=need&_=1534776379597} hits=0 status=0 QTime=1
+2018-08-20 14:51:07.787 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:need&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 14:51:13.937 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=0
+2018-08-20 14:51:15.923 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 14:51:16.644 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=2
+2018-08-20 14:51:16.784 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 14:51:16.925 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 14:51:17.030 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=0
+2018-08-20 14:51:25.972 INFO  (qtp1908316405-16) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:need&_=1534776379597} hits=3 status=0 QTime=0
+2018-08-20 14:51:53.192 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=*:*&sort=date+desc} hits=562 status=0 QTime=66
+2018-08-20 14:52:37.576 INFO  (qtp1908316405-12) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=*:*&sort=date+desc&rows=20} hits=562 status=0 QTime=0
+2018-08-20 14:53:14.716 INFO  (qtp1908316405-19) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=*:*&fl=text,date} hits=562 status=0 QTime=1
+2018-08-20 14:53:27.964 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=acc*} hits=9 status=0 QTime=55
+2018-08-20 14:53:44.469 INFO  (qtp1908316405-20) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=ac*c} hits=1 status=0 QTime=11
+2018-08-20 14:54:22.052 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q="skills+people"~2} hits=1 status=0 QTime=34
+2018-08-20 14:54:50.076 ERROR (qtp1908316405-34) [   x:news] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '"skills ': Lexical error at line 1, column 9.  Encountered: <EOF> after : "\"skills "
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:195)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:517)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:384)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:330)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '"skills ': Lexical error at line 1, column 9.  Encountered: <EOF> after : "\"skills "
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 40 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 9.  Encountered: <EOF> after : "\"skills "
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
+	at org.apache.solr.parser.QueryParser.jj_scan_token(QueryParser.java:776)
+	at org.apache.solr.parser.QueryParser.jj_3R_3(QueryParser.java:640)
+	at org.apache.solr.parser.QueryParser.jj_3_1(QueryParser.java:631)
+	at org.apache.solr.parser.QueryParser.jj_2_1(QueryParser.java:600)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:141)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 43 more
+
+2018-08-20 14:54:50.077 INFO  (qtp1908316405-34) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q="skills+&people"=} status=400 QTime=33
+2018-08-20 14:55:44.204 INFO  (qtp1908316405-14) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=date:[2018-01-19T00:00:00Z+TO+2018-01-30T00:00:00Z]&fl=text,+date&sort=date+asc&rows=50} hits=30 status=0 QTime=45
+2018-08-20 15:00:03.999 INFO  (qtp1908316405-20) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:develop&_=1534776379597} hits=4 status=0 QTime=1
+2018-08-20 15:00:50.464 INFO  (qtp1908316405-12) [   x:news] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,attributes = {startup=lazy, name=/spell, class=solr.SearchHandler},args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,df=_text_},last-components=[spellcheck]}} 
+2018-08-20 15:00:50.509 INFO  (qtp1908316405-12) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/spell params={spellcheck.q=presiden&spellcheck=true} hits=0 status=0 QTime=45
+2018-08-20 15:01:18.776 INFO  (qtp1908316405-19) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=four&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 15:01:36.357 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=develop&_=1534776379597} hits=0 status=0 QTime=0
+2018-08-20 15:01:46.877 INFO  (qtp1908316405-21) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=need&_=1534776379597} hits=0 status=0 QTime=0
+2018-08-20 15:01:54.273 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:need&_=1534776379597} hits=3 status=0 QTime=0
+2018-08-20 15:02:01.464 INFO  (qtp1908316405-21) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=1
+2018-08-20 15:02:06.570 INFO  (qtp1908316405-18) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:wa*&_=1534776379597} hits=13 status=0 QTime=2
+2018-08-20 15:02:21.817 INFO  (qtp1908316405-21) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=wants&_=1534776379597} hits=1 status=0 QTime=1
+2018-08-20 15:02:31.888 INFO  (qtp1908316405-13) [   x:news] o.a.s.c.S.Request [news]  webapp=/solr path=/select params={q=text:want&_=1534776379597} hits=3 status=0 QTime=0
+2018-08-20 15:03:00.340 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=294247762
+2018-08-20 15:03:00.341 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-08-20 15:03:00.341 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-08-20 15:03:00.341 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-08-20 15:03:00.356 INFO  (coreCloseExecutor-13-thread-1) [   x:news] o.a.s.c.SolrCore [news]  CLOSING SolrCore org.apache.solr.core.SolrCore@516820fd
+2018-08-20 15:03:00.356 INFO  (coreCloseExecutor-13-thread-1) [   x:news] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.news, tag=1365778685
